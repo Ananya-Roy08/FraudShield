@@ -24,7 +24,9 @@ model = joblib.load(MODEL_PATH)
 def health_check():
     return {
         "status": "healthy",
-        "application": "FraudShield"
+        "application": "FraudShield",
+        "version": "1.0.0",
+        "model_loaded": True
     }
 
 
