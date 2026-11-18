@@ -1,0 +1,22 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraudshield"
+version = "1.0.0"
+description = "ML-Based Financial Transaction Fraud Detection System"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "scikit-learn",
+    "joblib",
+    "numpy",
+    "pandas"
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
